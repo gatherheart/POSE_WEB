@@ -822,7 +822,7 @@ fieldset[disabled]
   background-color: transparent;
   border: 1px solid #E3E3E3;
   border-radius: 30px;
-  color: #2c2c2c;
+  color: #5360ff;
   line-height: normal;
   height: auto;
   font-size: 0.8571em;
@@ -838,7 +838,7 @@ fieldset[disabled]
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: 0 !important;
-    color: #2c2c2c; }
+    color: #5360ff; }
     .form-control:focus + .input-group-append .input-group-text,
     .form-control:focus ~ .input-group-append .input-group-text,
     .form-control:focus + .input-group-prepend .input-group-text,
@@ -1278,7 +1278,7 @@ p.description {
   .title.title-up {
     text-transform: uppercase; }
     .title.title-up a {
-      color: #2c2c2c;
+      color: #5360ff;
       text-decoration: none; }
   .title + .category {
     margin-top: -10px; }
@@ -1351,7 +1351,7 @@ a.text-gray:focus, a.text-gray:hover {
       color: rgba(255, 255, 255, 0.8); }
 
 body {
-  color: #2c2c2c;
+  color: #5360ff;
   font-size: 14px;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -4526,9 +4526,9 @@ Created using IcoMoon - icomoon.io
   padding-top: 80px;
   padding-bottom: 45px;
   position: relative;
-  background: #2c2c2c;
+  background: #5360ff;
   /* fallback for old browsers */
-  background: linear-gradient(160deg, #2c2c2c 0%, #1f1f1f 100%);
+  background: linear-gradient(160deg, #5360ff 0%, #1f1f1f 100%);
   background-size: 105%; }
   .panel-header .header .title {
     color: #FFFFFF; }

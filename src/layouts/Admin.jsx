@@ -25,8 +25,6 @@ import { Route, Switch, Redirect } from "react-router-dom";
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.jsx";
 import Footer from "components/Footer/Footer.jsx";
-import Sidebar from "components/Sidebar/Sidebar.jsx";
-import FixedPlugin from "components/FixedPlugin/FixedPlugin.jsx";
 
 import routes from "routes.js";
 
@@ -61,11 +59,6 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <Sidebar
-          {...this.props}
-          routes={routes}
-          backgroundColor={this.state.backgroundColor}
-        />
         <div className="main-panel" ref={this.mainPanel}>
           <DemoNavbar {...this.props} />
           <Switch>
@@ -78,14 +71,10 @@ class Dashboard extends React.Component {
                 />
               );
             })}
-            <Redirect from="/admin" to="/admin/dashboard" />
+            <Redirect from="/admin" to={"/admin/dashboard/" + this.props.match.params.id} />
           </Switch>
           <Footer fluid />
         </div>
-        <FixedPlugin
-          bgColor={this.state.backgroundColor}
-          handleColorClick={this.handleColorClick}
-        />
       </div>
     );
   }

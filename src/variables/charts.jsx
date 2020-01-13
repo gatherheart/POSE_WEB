@@ -152,26 +152,18 @@ const dashboardPanelChart = {
 
     return {
       labels: [
-        "JAN",
-        "FEB",
-        "MAR",
-        "APR",
-        "MAY",
-        "JUN",
-        "JUL",
-        "AUG",
-        "SEP",
-        "OCT",
-        "NOV",
-        "DEC"
+        "Normal Posture",
+        "Forward Head Posture" ,
+        "One-sided Posture",
+        "Slouch Posture",
       ],
       datasets: [
         {
           label: "Data",
           borderColor: chartColor,
           pointBorderColor: chartColor,
-          pointBackgroundColor: "#2c2c2c",
-          pointHoverBackgroundColor: "#2c2c2c",
+          pointBackgroundColor: "#5360ff",
+          pointHoverBackgroundColor: "#5360ff",
           pointHoverBorderColor: chartColor,
           pointBorderWidth: 1,
           pointHoverRadius: 7,
@@ -180,7 +172,7 @@ const dashboardPanelChart = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [50, 150, 100, 190, 130, 90, 150, 160, 120, 140, 190, 95]
+          data: [10, 100, 110, 120]
         }
       ]
     };
@@ -256,7 +248,7 @@ const dashboardShippedProductsChart = {
     var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
     gradientStroke.addColorStop(0, "#80b6f4");
     gradientStroke.addColorStop(1, chartColor);
-    var gradientFill = ctx.createLinearGradient(0, 170, 0, 50);
+    var gradientFill = ctx.createLinearGradient(0, 200, 0, 50);
     gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
     gradientFill.addColorStop(1, "rgba(249, 99, 59, 0.40)");
     return {

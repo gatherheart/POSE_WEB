@@ -136,6 +136,10 @@ class Header extends React.Component {
       >
         <Container fluid>
           <div className="navbar-wrapper">
+            <span class="logo">
+              <a href="/">
+                <img src={require("../../assets/img/logo.png")} height="33" width="120" alt="POSE" /></a>
+            </span>
             <div className="navbar-toggle">
               <button
                 type="button"
